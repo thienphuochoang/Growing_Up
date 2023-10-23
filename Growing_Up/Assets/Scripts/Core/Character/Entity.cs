@@ -14,14 +14,12 @@ public class Entity : MonoBehaviour
     protected LayerMask groundLayerMask;
     [SerializeField]
     protected Transform groundCheck;
-    [SerializeField]
-    protected float groundCheckDistance = 1f;
+    public float groundCheckDistance = 1f;
     [SerializeField]
     protected Transform wallCheck;
-    [SerializeField]
-    protected float wallCheckDistance = 1f;
+    public float wallCheckDistance = 1f;
     public bool IsOnTheGround() =>Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayerMask);
-    public bool IsWallDetected() => Physics2D.Raycast(wallCheck.position, Vector2.right * facingDirection, wallCheckDistance, groundLayerMask);
+    
 
     protected virtual void Start()
     {

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6024d69539677134f9aa0f950d0e4f1f
+guid: 381737f52ed0bbd4cb3e19875c50a831
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: health-pick-up@idle_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 64
-        width: 23
-        height: 32
+        x: 8
+        y: 71
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f7ecaf137eb9f64ea58aa29fc96a054
-      internalID: -540926613
+      spriteID: f5603e664f37db84985de4176f604abf
+      internalID: 12423996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: health-pick-up@idle_1
       rect:
         serializedVersion: 2
-        x: 86
-        y: 64
-        width: 23
-        height: 33
+        x: 40
+        y: 72
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fc6c2dd4c36b664c8f7cbabdfd6e2f1
-      internalID: -895631934
+      spriteID: 56ae71da6fa9eb548821c8129cc9c33b
+      internalID: 470261070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_2
+      name: health-pick-up@idle_2
       rect:
         serializedVersion: 2
-        x: 150
-        y: 64
-        width: 23
-        height: 33
+        x: 72
+        y: 73
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94c85206e8f322f44ab190fefef44a67
-      internalID: -686116112
+      spriteID: 81ad11d54a39aca41b20bbca07c08756
+      internalID: -2009749687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: health-pick-up@idle_3
       rect:
         serializedVersion: 2
-        x: 214
-        y: 64
-        width: 23
-        height: 36
+        x: 104
+        y: 73
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a465a158939c7be47a50ecf3795521c8
-      internalID: -1701102801
+      spriteID: ccb5aa2bcd278c442a570d4a6c2815ac
+      internalID: -184678276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_4
+      name: health-pick-up@idle_4
       rect:
         serializedVersion: 2
-        x: 276
-        y: 64
-        width: 24
-        height: 33
+        x: 136
+        y: 73
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e75f08078c1d49041a0a331079b85373
-      internalID: -473832164
+      spriteID: 6e523e246d6c83d46a0244be17404ac8
+      internalID: -1226836009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_5
+      name: health-pick-up@idle_5
       rect:
         serializedVersion: 2
-        x: 337
-        y: 64
-        width: 32
-        height: 29
+        x: 168
+        y: 73
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +248,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a05e03df5e61a04189c6e5e5beef34d
-      internalID: 1878597838
+      spriteID: a9451f55e8519f84e821191f3c21b086
+      internalID: 1690960249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_6
+      name: health-pick-up@idle_6
       rect:
         serializedVersion: 2
-        x: 400
-        y: 64
-        width: 34
-        height: 28
+        x: 200
+        y: 73
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae0208eb6b971f3408d6cdf3d41b76a6
-      internalID: -556801351
+      spriteID: 66f9748bca5f7e54eba7aa2c865cdab7
+      internalID: 1382946748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_7
+      name: health-pick-up@idle_7
       rect:
         serializedVersion: 2
-        x: 465
-        y: 64
-        width: 32
-        height: 30
+        x: 232
+        y: 72
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +290,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9ef93d2f7f30134c840828248933391
-      internalID: -1329923490
+      spriteID: c26d2da642b4e954c9b5e42da64c6840
+      internalID: -1815580866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_8
+      name: health-pick-up@idle_8
       rect:
         serializedVersion: 2
-        x: 530
-        y: 64
-        width: 30
-        height: 32
+        x: 264
+        y: 71
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,20 +311,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee22abfa70aad484dbd2e6932e2c3ae0
-      internalID: -288874622
+      spriteID: b4afc849d2af17447b4a6b55f4f4e8ff
+      internalID: -182813402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_9
+      name: health-pick-up@idle_9
       rect:
         serializedVersion: 2
-        x: 594
-        y: 64
-        width: 30
-        height: 33
+        x: 296
+        y: 71
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c485dd2b2dba9e4cb67408706953ccf
-      internalID: 143810647
+      spriteID: 77a2dd65e4ff0194ca13725cdce16423
+      internalID: -616951292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_10
+      name: health-pick-up@idle_10
       rect:
         serializedVersion: 2
-        x: 273
-        y: 0
-        width: 32
-        height: 33
+        x: 8
+        y: 39
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,20 +353,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b189b7534c53316488bf4d28c3990f72
-      internalID: -1984479785
+      spriteID: ee9c49e3805fc6a43b6d8379b797c636
+      internalID: 1621987402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_11
+      name: health-pick-up@idle_11
       rect:
         serializedVersion: 2
-        x: 337
-        y: 0
-        width: 31
-        height: 36
+        x: 40
+        y: 39
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,20 +374,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 626d527bac6ce2244b331cc0729b0a18
-      internalID: 398406599
+      spriteID: cf74674e57a139d459d85e503205f495
+      internalID: -1013666413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_12
+      name: health-pick-up@idle_12
       rect:
         serializedVersion: 2
-        x: 403
-        y: 0
-        width: 28
-        height: 33
+        x: 72
+        y: 39
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,20 +395,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2800344bacd74d64fbbb3d265cb6e8d5
-      internalID: -99777114
+      spriteID: a5e7e9bdc6f09a0459af28e4ad304aea
+      internalID: -1063731059
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_13
+      name: health-pick-up@idle_13
       rect:
         serializedVersion: 2
-        x: 469
-        y: 0
-        width: 26
-        height: 29
+        x: 104
+        y: 40
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,20 +416,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a11c1c6cfb8a8a14cba99e34f4fd6ea6
-      internalID: -1522039938
+      spriteID: d7c774a7e2fd647469355e02d9968ba8
+      internalID: 473058532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_14
+      name: health-pick-up@idle_14
       rect:
         serializedVersion: 2
-        x: 533
-        y: 0
-        width: 26
-        height: 28
+        x: 136
+        y: 41
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,20 +437,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 312c0a6c4fde9f34789421a90d491f17
-      internalID: 626698480
+      spriteID: ecb9e1efe4cb5c54fb023d58a60abb89
+      internalID: -2080591919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_15
+      name: health-pick-up@idle_15
       rect:
         serializedVersion: 2
-        x: 597
-        y: 0
-        width: 26
-        height: 30
+        x: 168
+        y: 41
+        width: 16
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,8 +458,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbbf060bb73daba468003f9215025282
-      internalID: -1262057736
+      spriteID: 8db6db29813de2e4484d772162e27530
+      internalID: -702321486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health-pick-up@idle_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fecc5c04689c74eba214a1065c49c6
+      internalID: -621128228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health-pick-up@idle_17
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bebf0a72c779884b836411e221d5537
+      internalID: -1406159598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health-pick-up@idle_18
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 41
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 678ad475ba9b17e46be4c1a270717fa0
+      internalID: -1300170564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health-pick-up@idle_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 40
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a79c3adcef30d4d807c3e51dad5afe
+      internalID: -1398226778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health-pick-up@idle_20
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 7
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355f3b81d5d93f3419eeb4e3a8d754e8
+      internalID: 1438836701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health-pick-up@idle_21
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 7
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7285e074ed47f3a49af5ed1144727edb
+      internalID: -1982338836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health-pick-up@idle_22
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 7
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228d611c92eef2a48a5bd7c8505451bf
+      internalID: 799784534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: health-pick-up@idle_23
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 7
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee675deeaa0c8f40b85e62572ddde43
+      internalID: 696112987
       vertices: []
       indices: 
       edges: []
@@ -475,22 +643,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Idle_0: -540926613
-      Idle_1: -895631934
-      Idle_10: -1984479785
-      Idle_11: 398406599
-      Idle_12: -99777114
-      Idle_13: -1522039938
-      Idle_14: 626698480
-      Idle_15: -1262057736
-      Idle_2: -686116112
-      Idle_3: -1701102801
-      Idle_4: -473832164
-      Idle_5: 1878597838
-      Idle_6: -556801351
-      Idle_7: -1329923490
-      Idle_8: -288874622
-      Idle_9: 143810647
+      health-pick-up@idle_0: 12423996
+      health-pick-up@idle_1: 470261070
+      health-pick-up@idle_10: 1621987402
+      health-pick-up@idle_11: -1013666413
+      health-pick-up@idle_12: -1063731059
+      health-pick-up@idle_13: 473058532
+      health-pick-up@idle_14: -2080591919
+      health-pick-up@idle_15: -702321486
+      health-pick-up@idle_16: -621128228
+      health-pick-up@idle_17: -1406159598
+      health-pick-up@idle_18: -1300170564
+      health-pick-up@idle_19: -1398226778
+      health-pick-up@idle_2: -2009749687
+      health-pick-up@idle_20: 1438836701
+      health-pick-up@idle_21: -1982338836
+      health-pick-up@idle_22: 799784534
+      health-pick-up@idle_23: 696112987
+      health-pick-up@idle_3: -184678276
+      health-pick-up@idle_4: -1226836009
+      health-pick-up@idle_5: 1690960249
+      health-pick-up@idle_6: 1382946748
+      health-pick-up@idle_7: -1815580866
+      health-pick-up@idle_8: -182813402
+      health-pick-up@idle_9: -616951292
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

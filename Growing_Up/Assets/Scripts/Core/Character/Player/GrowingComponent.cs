@@ -8,21 +8,28 @@ public class GrowingComponent : MonoBehaviour
     [SerializeField]
     private bool _isGrowing = false;
 
-    private float _scaleFactor = 0.01f;
+    private Player _player;
+
+    private float _scaleFactor = 0.0001f;
     private Vector3 _initialScale;
 
     private void Start()
     {
         _initialScale = transform.localScale;
+        _player = GetComponent<Player>();
     }
 
     private void Update()
     {
-        Growing();
+        if (_isGrowing)
+            Growing();
     }
     private void Growing()
     {
         Vector3 newScale = transform.localScale + new Vector3(_scaleFactor, _scaleFactor, _scaleFactor);
         transform.localScale = newScale;
+        // TODO: Need to scale the ground distance check and wall check
+        //_player.groundCheckDistance += _scaleFactor;
+        //_player.wallCheckDistance += _scaleFactor;
     }
 }
