@@ -13,6 +13,7 @@ public class Enemy : Entity
     public float idleTime = 2f;
     
     [Header("Battle info")]
+    [SerializeField] private GameObject _fruitPrefab;
     public float attackCooldown;
     [HideInInspector]
     public float lastTimeAttacked;
@@ -88,7 +89,8 @@ public class Enemy : Entity
     }
     public void TriggerAttackAnimation()
     {
-        //GameObject newBomb = Instantiate(_bombPrefab, _bombThrowingTransform.position, Quaternion.identity);
-        //newBomb.GetComponent<BombProjectileController>().SetupProjectile(_player.transform.position, stats);
+        GameObject newProjectile = Instantiate(_fruitPrefab, transform.position, Quaternion.identity);
+        newProjectile.GetComponent<ProjectileController>().SetupProjectile(_player.transform.position);
     }
+    public void TriggerAnimation() => stateMachine.currentState.FinishAnimationTrigger();
 }
