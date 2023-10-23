@@ -12,10 +12,10 @@ public class PlayerOnTheGroundState : PlayerState
     public override void UpdateState()
     {
         base.UpdateState();
-        /*if (Input.GetKey(KeyCode.A))
-            stateMachine.ChangeState(player.primaryAttackState);*/
-        /*if (Input.GetKeyDown(KeyCode.Space) && player.IsOnTheGround())
-            stateMachine.ChangeState(player.jumpState);*/
+        if (Input.GetKey(KeyCode.A))
+            stateMachine.ChangeState(player.attackState);
+        if (Input.GetKeyDown(KeyCode.Space) && player.IsOnTheGround())
+            stateMachine.ChangeState(player.jumpState);
     }
 
     public override void EndState()

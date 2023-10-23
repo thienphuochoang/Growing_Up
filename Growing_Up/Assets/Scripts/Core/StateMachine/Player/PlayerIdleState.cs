@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerIdleState : PlayerState
+public class PlayerIdleState : PlayerOnTheGroundState
 {
     public PlayerIdleState(Player inputPlayer, PlayerStateMachine inputPlayerStateMachine, string inputAnimBoolName) : base(inputPlayer, inputPlayerStateMachine, inputAnimBoolName)
     {
@@ -19,7 +19,7 @@ public class PlayerIdleState : PlayerState
         base.UpdateState();
         if (horizontalInput != 0)
             stateMachine.ChangeState(player.moveState);
-        /*if (rb.velocity.y < 0)
-            stateMachine.ChangeState(player.airState);*/
+        if (rb.velocity.y < 0)
+            stateMachine.ChangeState(player.airState);
     }
 }

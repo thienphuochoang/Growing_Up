@@ -24,8 +24,8 @@ public class PlayerMoveState : PlayerOnTheGroundState
             stateMachine.ChangeState(player.idleState);
         }
         
-        /*if (rb.velocity.y < -0.01)
-            stateMachine.ChangeState(player.airState);*/
+        if (rb.velocity.y < -0.01)
+            stateMachine.ChangeState(player.airState);
             
     }
 }

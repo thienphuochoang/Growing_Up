@@ -44,11 +44,11 @@ public class Entity : MonoBehaviour
         _isFacingRight = !_isFacingRight;
         transform.Rotate(0, 180, 0);
     }
-    public void ControlFlip(float xVelocity)
+    public void ControlFlip(float horizontalVelocity)
     {
-        if (xVelocity > 0 && !_isFacingRight)
+        if (horizontalVelocity > 0 && !_isFacingRight)
             Flip();
-        else if (xVelocity < 0 && _isFacingRight)
+        else if (horizontalVelocity < 0 && _isFacingRight)
             Flip();
     }
 
