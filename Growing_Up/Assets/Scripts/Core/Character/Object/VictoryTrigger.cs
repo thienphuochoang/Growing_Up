@@ -9,7 +9,10 @@ public class VictoryTrigger : MonoBehaviour
     private GameObject victoryWindow;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        victoryWindow.SetActive(true);
-        Time.timeScale = 0;
+        if (GameManager.Instance.EnemyKillCount == 0)
+        {
+            victoryWindow.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 }

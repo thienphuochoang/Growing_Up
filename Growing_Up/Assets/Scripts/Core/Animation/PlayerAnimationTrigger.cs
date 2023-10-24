@@ -23,6 +23,7 @@ public class PlayerAnimationTrigger : MonoBehaviour
             if (hitObj.GetComponent<Enemy>() != null)
             {
                 hitObj.GetComponent<Enemy>().Die();
+                GameManager.Instance.EnemyKillCount--;
             }
             else if (hitObj.GetComponent<BreakableObject>() != null && GameManager.Instance.canBreakObjects)
             {

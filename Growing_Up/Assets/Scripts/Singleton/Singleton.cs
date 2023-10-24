@@ -55,7 +55,7 @@ public class Singleton<T> : MonoBehaviour where T : Component
             // If this is the first instance, make it singleton.
             _instance = this as T;
             _enabled = true;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
     }
 
