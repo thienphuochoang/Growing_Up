@@ -15,4 +15,9 @@ public class EnemyAnimationTrigger : MonoBehaviour
     {
         _enemy.TriggerAttackAnimation();
     }
+
+    private void TriggerDeathAnimation()
+    {
+        _enemy.TriggerDeathAnimation();
+    }
 }

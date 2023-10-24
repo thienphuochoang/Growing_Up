@@ -20,7 +20,10 @@ public class EnemyBattleState : EnemyState
     public override void UpdateState()
     {
         base.UpdateState();
-
+        if (_player.position.x > enemy.transform.position.x && enemy.facingDirection == -1)
+            enemy.Flip();
+        else if (_player.position.x < enemy.transform.position.x && enemy.facingDirection == 1)
+            enemy.Flip();
         if (enemy.IsPlayerDetectedInHalfOfTheCircle())
         {
             stateTimer = enemy.battleTime;
@@ -35,10 +38,7 @@ public class EnemyBattleState : EnemyState
                 stateMachine.ChangeState(enemy.idleState);
         }
 
-        if (_player.position.x > enemy.transform.position.x && enemy.facingDirection == -1)
-            enemy.Flip();
-        else if (_player.position.x < enemy.transform.position.x && enemy.facingDirection == 1)
-            enemy.Flip();
+
         enemy.ResetVelocity();
     }
 

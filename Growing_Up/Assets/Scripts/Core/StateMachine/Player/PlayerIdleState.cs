@@ -17,9 +17,9 @@ public class PlayerIdleState : PlayerOnTheGroundState
     public override void UpdateState()
     {
         base.UpdateState();
-        if (horizontalInput != 0)
+        if (horizontalInput != 0 && player.isBusy == false)
             stateMachine.ChangeState(player.moveState);
-        if (rb.velocity.y < 0)
+        if (rb.velocity.y < 0 && player.isBusy == false)
             stateMachine.ChangeState(player.airState);
     }
 }

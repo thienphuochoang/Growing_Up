@@ -33,6 +33,7 @@ public class Enemy : Entity
     public EnemyMoveState moveState { get; private set; }
     public EnemyBattleState battleState { get; private set; }
     public EnemyAttackState attackState { get; private set; }
+    public EnemyDieState dieState { get; private set; }
     protected override void Awake()
     {
         base.Awake();
@@ -41,6 +42,7 @@ public class Enemy : Entity
         moveState = new EnemyMoveState(this, stateMachine, "Move");
         battleState = new EnemyBattleState(this, stateMachine, "Move");
         attackState = new EnemyAttackState(this, stateMachine, "Attack");
+        dieState = new EnemyDieState(this, stateMachine, "Die");
     }
 
     protected override void Start()
@@ -54,6 +56,11 @@ public class Enemy : Entity
     protected override void Update()
     {
         base.Update();
+        if (isDead)
+        {
+            stateMachine.ChangeState(dieState);
+            return;
+        }
         stateMachine.currentState.UpdateState();
     }
 
@@ -93,4 +100,14 @@ public class Enemy : Entity
         newProjectile.GetComponent<ProjectileController>().SetupProjectile(_player.transform.position);
     }
     public void TriggerAnimation() => stateMachine.currentState.FinishAnimationTrigger();
+
+    public override void Die()
+    {
+        base.Die();
+        isDead = true;
+    }
+    public void TriggerDeathAnimation()
+    {
+        Destroy(this.gameObject);
+    }
 }

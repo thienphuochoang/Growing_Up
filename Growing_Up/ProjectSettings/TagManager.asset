@@ -47,6 +47,12 @@ TagManager:
   - name: Ground
     uniqueID: 1563262531
     locked: 0
+  - name: Deadground
+    uniqueID: 1245506085
+    locked: 0
+  - name: Object
+    uniqueID: 3299995381
+    locked: 0
   - name: Enemy
     uniqueID: 3659988081
     locked: 0

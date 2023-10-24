@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerStateMachine
 {
-    public PlayerState currentState { get; private set; }
-
+    //public PlayerState currentState { get; private set; }
+    public PlayerState currentState;
     public void Initialize(PlayerState state)
     {
         currentState = state;

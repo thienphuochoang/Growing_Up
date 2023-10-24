@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAttackState : PlayerOnTheGroundState
+public class PlayerAttackState : PlayerState
 {
     public PlayerAttackState(Player inputPlayer, PlayerStateMachine inputPlayerStateMachine, string inputAnimBoolName) : base(inputPlayer, inputPlayerStateMachine, inputAnimBoolName)
     {
@@ -10,11 +10,13 @@ public class PlayerAttackState : PlayerOnTheGroundState
     public override void BeginState()
     {
         base.BeginState();
-        
         player.animator.SetBool("Attack", true);
-        
-        player.SetVelocity(player.facingDirection, rb.velocity.y);
+        float attackDirection = player.facingDirection;
+        if (horizontalInput != 0)
+            attackDirection = horizontalInput;
+        player.SetVelocity(attackDirection, rb.velocity.y);
         stateTimer = 0.1f;
+        
     }
 
     public override void UpdateState()
@@ -29,5 +31,6 @@ public class PlayerAttackState : PlayerOnTheGroundState
     public override void EndState()
     {
         base.EndState();
+        player.StartCoroutine(nameof(player.BusyFor), 0.15f);
     }
 }

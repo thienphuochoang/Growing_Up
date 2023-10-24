@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
+    protected bool isDead = false;
     public Rigidbody2D rb { get; private set; }
     public Animator animator { get; private set; }
     public int facingDirection { get; private set; } = 1;
@@ -44,10 +46,15 @@ public class Entity : MonoBehaviour
     }
     public void ControlFlip(float horizontalVelocity)
     {
+        //Debug.Log(horizontalVelocity);
         if (horizontalVelocity > 0 && !_isFacingRight)
+        {
             Flip();
+        }
         else if (horizontalVelocity < 0 && _isFacingRight)
+        {
             Flip();
+        }
     }
 
     
@@ -68,5 +75,9 @@ public class Entity : MonoBehaviour
             Gizmos.DrawLine(groundCheck.position, new Vector3(groundCheck.position.x, groundCheck.position.y - groundCheckDistance));
             Gizmos.DrawLine(wallCheck.position, new Vector3(wallCheck.position.x + wallCheckDistance, wallCheck.position.y));
         }
+    }
+
+    public virtual void Die()
+    {
     }
 }

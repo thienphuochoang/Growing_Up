@@ -40,11 +40,13 @@ public class ProjectileController : MonoBehaviour
         if (col.gameObject.layer == LayerMask.NameToLayer(targetLayerName))
         {
             HitCollision();
+            GrowingComponent growing = col.GetComponent<GrowingComponent>();
+            growing.EnableGrowing();
         }
-        else if (col.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        /*else if (col.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
             HitCollision();
-        }
+        }*/
     }
 
     private void HitCollision()
